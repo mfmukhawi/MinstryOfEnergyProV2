@@ -1,0 +1,109 @@
+
+.custom-input-field {
+  font-family: 'Noto Kufi Arabic', sans-serif;
+  background: #ffffff !important;
+  border: 1px solid #bfd3dc !important;
+  border-radius: 8px !important;
+  padding: 0 0.5rem;
+  color: #004d71;
+
+  &::placeholder {
+    font-family: 'Noto Kufi Arabic', sans-serif !important;
+    font-weight: 500;
+    font-size: 18px;
+    color: #bfd3dc;
+  }
+
+  &--disabled, &:disabled{
+    height: 48px !important;
+    background: rgba(66, 83, 92, 0.05) !important;
+    border: 1px solid #bfd3dc !important;
+    border-radius: 8px !important;
+    color: #80a6b8 !important;
+
+    &::placeholder {
+      color: #80a6b8;
+    }
+  }
+
+  &:focus {
+    outline: none !important;
+  }
+}
+
+
+// ####### calendar ##########
+.p-calendar.custom-calendar {
+  input {
+    font-family: 'Noto Kufi Arabic', sans-serif !important;
+    height: 48px;
+    background: #ffffff;
+    border: 1px solid #bfd3dc;
+    border-radius: 8px;
+
+    &:hover {
+      border-color: #bfd3dc;
+    }
+
+    &::placeholder {
+      font-family: 'Noto Kufi Arabic', sans-serif !important;
+      font-weight: 500;
+      font-size: 18px;
+      color: #bfd3dc;
+    }
+  }
+}
+
+.custom-icon-position {
+  top: 47% !important;
+}
+
+.custom-icon {
+  position: absolute;
+  top: 0;
+  width: 60px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: medium;
+  color: rgb(194, 9, 9);
+  
+  &-left {
+    left: 0;
+  }
+
+  &-right {
+    right: 0;
+  }
+}
+
+
+
+.form-label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  color: #004d71;
+}
+
+.form-control {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 34px;
+  align-items: center;
+  color: #80a6b8;
+}
+
+.subTitle h5 , .subTitle{
+  color: #004d71;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+
+
+
+
+
+  

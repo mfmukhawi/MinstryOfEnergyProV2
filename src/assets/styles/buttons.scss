@@ -1,0 +1,48 @@
+.primary-btn {
+  font-family: "Noto Kufi Arabic", sans-serif !important;
+  background: #004d71 !important;
+  border-color: #004d71;
+  border-radius: 8px;
+  color: #fff !important;
+
+  &:hover {
+    background: #fff !important;
+    border: 1px solid #004d71 !important;
+    color: #004d71 !important;
+  }
+
+  &:focus {
+    box-shadow: none !important;
+  }
+
+  &--disabled {
+    background: rgba(66, 83, 92, 0.3) !important;
+    border-color: rgba(66, 83, 92, 0.3) !important;
+  }
+}
+
+.primary-outline-btn {
+  @extend .primary-btn;
+  background: #fff !important;
+  border: 1px solid #004d71 !important;
+  color: #004d71 !important;
+
+  &:hover {
+    background: #004d71 !important;
+    color: #fff !important;
+  }
+}
+
+.flat-btn {
+  font-family: "Noto Kufi Arabic", sans-serif !important;
+  font-size: 18px;
+  color: #004d71;
+
+  &--info {
+    color: #38c0f0 !important;
+  }
+
+  &--danger {
+    color: #ed374c;
+  }
+}

@@ -1,1 +1,130 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import 'assets/styles/helpers';
+@import 'assets/styles/global';
+@import 'assets/styles/custom-popup';
+@import 'assets/styles/buttons';
+@import 'assets/styles/custom-accordion';
+@import 'assets/styles/inputs';
+@import 'assets/styles/custom-dropdown';
+@import 'assets/styles/custom-checkbox';
+@import 'assets/styles/primary-accordion';
+@import "~primeng/resources/primeng.min.css";
+@import "~primeicons/primeicons.css";
+// @import '~primeng/resources/themes/saga-blue/theme.css';
+// @import '~primeng/resources/primeng.min.css';
+
+/* Importing Bootstrap SCSS file. */
+@import 'assets/styles/bootstrap/bootstrap.5.2.3.rtl.min.css';
+// @import 'assets/styles/bootstrap/bootstrap.5.2.3.ltr.min.css';
+
+// @import 'assets/styles/bootstrap/abp-bundle.rtl.css';
+
+// styles-rtl.scss
+
+// @import "primeng/resources/themes/lara-light-blue/theme-rtl.css";
+@import "primeng/resources/primeng.css";
+// styles-ltr.scss
+
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+// @import "primeng/resources/primeng.css";
+
+
+
+body{
+  direction: rtl;
+  // direction: ltr;
+
+}
+
+
+  .filter-btns {
+    margin-right: 24px;
+    margin-top: 21px;
+    width: 130px;
+    height: 48px;
+    font-weight: 400px;
+  }
+  .filter-btn:active {
+    background-color: #004d71;
+  }
+
+  .h3-custom {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 46px;
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+    color: #00355e;
+  }
+
+  .allBtns {
+    background-color: #004d71;
+  }
+
+  .p-card .p-card-content {
+    padding: 0.5rem;
+  }
+
+  .app-title {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #004d71;
+    margin: 30px 0;
+    line-height: 45.6px;
+  }
+
+
+  .horizontal-line{
+    border-bottom: 2px solid #42535C1A;
+    margin: 0;
+    padding: 0;
+}
+
+.subTitle h5 , .subTitle{
+  font-family: 'Noto Kufi Arabic', sans-serif;
+  color: #004d71;
+  font-size: 18px;
+  font-weight: 400;
+  // line-height: 34.15px;
+}
+
+ .description , .status-text{
+  font-family: 'Noto Kufi Arabic', sans-serif;
+  color: #42535CB2;
+  font-size: 16px;
+  font-weight: 400;
+  // line-height: 34.15px;
+}
+
+
+@media screen and (max-width: 576px) { // for mobile
+  .app-title {
+    font-size: 22px;
+
+  }
+
+  .subTitle h5 , .subTitle{
+    font-size: 16px;
+  }
+
+   .description ,.status-text{
+    font-size: 14px;
+  }
+
+
+  }//end @media
+
+// ---------[ v2 ]----------\
+$custom-light-blue-color: #F6FBFD;
+$custom-gray-color: #717577;
+$custom-dark-blue-color: #02618D;
+$custom-pale-blue-gray-color: #EAEEF1;
+$custom-deep-sky-blue-color:#1FA5D3;
+
+// fount --------
+
+$noto-kufi-arabic-font: 'Noto Kufi Arabic', sans-serif;

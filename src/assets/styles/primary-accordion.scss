@@ -1,0 +1,57 @@
+.p-accordion.primary-accordion {
+  .p-accordion-tab {
+    .p-accordion-header {
+      .p-accordion-header-link {
+        background: rgba(222, 231, 241, 0.3) !important;
+        border: 1px solid #dee9ee !important;
+        border-radius: 5px !important;
+        
+        &:focus {
+          box-shadow: none !important;
+        }
+      }
+    }
+  }
+
+  .p-accordion-content {
+    border: 0 !important;
+    background: #f8fafc !important;
+  }
+
+  .p-accordion-tab-active {
+    .p-accordion-header {
+      .p-accordion-header-link {
+        //border-bottom: 0 !important;
+        border-bottom-left-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+      }
+    }
+  }
+}
+
+/* primary accordion helper classes */
+.primary-accordion-header {
+  &__title-icon {
+    margin-left: 1rem;
+  }
+
+  &__title {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #00355e;
+  }
+}
+
+.primary-accordion-content {
+  list-style-type: decimal;
+
+  &__title {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #004d71;
+  }
+
+  
+}
