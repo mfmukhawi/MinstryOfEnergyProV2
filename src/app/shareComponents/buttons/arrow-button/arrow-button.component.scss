@@ -1,0 +1,32 @@
+//===================[accordion box arrow]=================================================
+
+.box-arrow {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: #EAEEF1;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.box-arrow::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-image: url('../../../../../src/assets/icons/png/arrow-down.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform 0.4s ease-in-out;
+}
+
+.box-arrow-open::before {
+  content: '';
+  top: 40%;
+  transform: rotate(180deg);
+}
+
+

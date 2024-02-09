@@ -1,0 +1,47 @@
+$custom-light-blue-color: #F6FBFD;
+$custom-gray-color: #717577;
+$custom-dark-blue-color: #02618D;
+$custom-pale-blue-gray-color: #EAEEF1;
+$custom-deep-sky-blue-color:#1FA5D3;
+$weight-color:#FFF;
+
+// fount --------
+
+$noto-kufi-arabic-font: 'Noto Kufi Arabic', sans-serif;
+
+
+
+
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 16px 16px 16px;
+    background-color: $weight-color;
+    border-radius: 8px;
+  }
+  .title{
+    color: $custom-deep-sky-blue-color;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: $noto-kufi-arabic-font ;
+  }
+
+  .header-buttons {
+    display: flex;
+    // gap: 10px;
+  }
+
+  .accordion-content {
+    // padding: 10px;
+    background-color: beige;
+    transition: max-height 5.3s ease-in-out; /* Adjust the duration as needed */
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .accordion-content.show {
+    max-height: 500px; /* Set to a value larger than the expected content height */
+    transition: max-height 5.3s ease-in-out; /* Match the duration with the one above */
+  }

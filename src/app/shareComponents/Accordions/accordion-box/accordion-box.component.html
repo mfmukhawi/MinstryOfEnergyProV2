@@ -1,0 +1,25 @@
+<div class="accordion my-3">
+  <div class="accordion-item">
+    <div class="accordion-header" [id]="accordionId">
+      <div class="d-flex justify-content-between align-items-center w-100">
+        <span class="title"> {{ title }} </span>
+        <div class="header-buttons ">
+          <button class="btn" (click)="onThreeDotClick()">
+            <i class="bi bi-three-dots-vertical"></i>
+          </button>
+          <app-arrow-button
+            data-bs-toggle="collapse"
+            [attr.data-bs-target]="'#collapse'+accordionId"
+            aria-expanded="false"
+            [attr.aria-controls]="'collapse'+accordionId"
+          ></app-arrow-button>
+        </div>
+      </div>
+    </div>
+    <div [id]="'collapse'+accordionId" class="accordion-collapse collapse" [attr.aria-labelledby]="accordionId">
+      <div class="accordion-body pt-0 ">
+        <ng-content></ng-content>
+      </div>
+    </div>
+  </div>
+</div>

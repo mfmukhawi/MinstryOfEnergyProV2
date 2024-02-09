@@ -9,10 +9,22 @@
 @import 'assets/styles/custom-dropdown';
 @import 'assets/styles/custom-checkbox';
 @import 'assets/styles/primary-accordion';
-@import "~primeng/resources/primeng.min.css";
-@import "~primeicons/primeicons.css";
-// @import '~primeng/resources/themes/saga-blue/theme.css';
-// @import '~primeng/resources/primeng.min.css';
+
+
+// @import "~primeicons/primeicons.css";
+
+// @import "node_modules/primeng/resources/themes/saga-blue/theme.css";
+// @import "node_modules/primeng/resources/themes/lara-light-blue/theme.css";
+
+
+
+// @import "~primeng/resources/primeng.min.css";
+// @import "~primeicons/primeicons.css";
+
+
+// @import "~primeng/resources/primeng.min.css";
+// @import "~primeng/resources/themes/lara-light-blue/theme.css";
+
 
 /* Importing Bootstrap SCSS file. */
 @import 'assets/styles/bootstrap/bootstrap.5.2.3.rtl.min.css';
@@ -23,10 +35,9 @@
 // styles-rtl.scss
 
 // @import "primeng/resources/themes/lara-light-blue/theme-rtl.css";
-@import "primeng/resources/primeng.css";
+// @import "primeng/resources/primeng.css";
 // styles-ltr.scss
 
-@import "primeng/resources/themes/lara-light-blue/theme.css";
 // @import "primeng/resources/primeng.css";
 
 
