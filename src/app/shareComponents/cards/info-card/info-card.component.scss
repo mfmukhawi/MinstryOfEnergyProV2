@@ -1,0 +1,42 @@
+$custom-light-blue-color: #F6FBFD;
+$custom-gray-color: #717577;
+$custom-dark-blue-color: #02618D;
+$custom-pale-blue-gray-color: #EAEEF1;
+$custom-deep-sky-blue-color:#1FA5D3;
+
+// fount --------
+
+$noto-kufi-arabic-font: 'Noto Kufi Arabic', sans-serif;
+
+//=============
+
+
+.card{
+background-color: $custom-light-blue-color ;
+font-family: $noto-kufi-arabic-font;
+}
+
+.card-title{
+    color: $custom-gray-color;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.card-content{
+    color: $custom-dark-blue-color;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.edit-btn{
+    background-color: $custom-pale-blue-gray-color;
+    width: 32px;
+    height: 32px;
+    border:none ;
+    border-radius: 8px;
+    &:hover{
+       background-color: #d9dcdf ;
+
+    }
+
+}

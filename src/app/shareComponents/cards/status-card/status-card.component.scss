@@ -1,0 +1,23 @@
+$custom-orange-color: #FF8900;
+$golden-poppy-color: #FFEBAF;
+
+
+// fount --------
+
+$noto-kufi-arabic-font: 'Noto Kufi Arabic', sans-serif;
+
+
+.card-title{
+  color: $custom-orange-color;
+  font-family: $noto-kufi-arabic-font;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+
+}
+
+.card{
+  background-color: $golden-poppy-color;
+  border: none;
+  gap: 8px;
+}

@@ -13,6 +13,9 @@ import { ArrowButtonComponent } from './shareComponents/buttons/arrow-button/arr
 import { AccordionSectionComponent } from './shareComponents/Accordions/accordion-section/accordion-section.component';
 import { LegalManagementProcessComponent } from './pages/legal-management-process/legal-management-process.component';
 import { AccordionBoxComponent } from './shareComponents/Accordions/accordion-box/accordion-box.component';
+import { InfoCardComponent } from './shareComponents/cards/info-card/info-card.component';
+import { ClassifyCardComponent } from './shareComponents/cards/classify-card/classify-card.component';
+import { StatusCardComponent } from './shareComponents/cards/status-card/status-card.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +25,10 @@ import { AccordionBoxComponent } from './shareComponents/Accordions/accordion-bo
     LegalManagementProcessComponent,
     AccordionBoxComponent,
     ArrowButtonComponent,
+    InfoCardComponent,
+    ClassifyCardComponent,
+    StatusCardComponent,
+
 
   ],
   imports: [
