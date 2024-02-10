@@ -1,3 +1,6 @@
+$custom-orange-color: #FF8900;
+$light-golden-poppy: #FFEBAF;
+
 //===================[accordion box arrow]=================================================
 
 .box-arrow {
@@ -7,6 +10,12 @@
   background-color: #EAEEF1;
   border-radius: 8px;
   cursor: pointer;
+  &-yellow{
+    background-color: $light-golden-poppy;
+
+  }
+
+
 }
 
 .box-arrow::before {
@@ -21,6 +30,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   transition: transform 0.4s ease-in-out;
+
+}
+.box-arrow-yellow::before {
+  filter: invert(69%) sepia(58%) saturate(5768%) hue-rotate(2deg) brightness(107%) contrast(105%);
 }
 
 .box-arrow-open::before {

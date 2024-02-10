@@ -7,8 +7,10 @@ import { Component, Input } from '@angular/core';
 })
 export class AccordionSectionComponent {
   @Input() title: string = '';
-  @Input() subtitle: string |null |undefined ;
+  @Input() status: string |null |undefined ;
   @Input() accordionId: string = '';
+  @Input() changeThemToYellow: boolean = false;
+
 
 
   isAccordionExpanded = false;

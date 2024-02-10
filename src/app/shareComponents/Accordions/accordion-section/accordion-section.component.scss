@@ -1,3 +1,9 @@
+$custom-orange-color: #FF8900;
+$intense-golden: #FEAE00;
+$light-yellow: #FDC600;
+$light-beige: #FFFAEB;
+$light-golden-poppy: #FFEBAF;
+$normal-pigment-green: #26A637;
 //===================[accordion header]=================================================
 
 .accordion-header {
@@ -9,8 +15,14 @@
   padding-inline-start: 8px;
   border-radius: 8px;
   transition: border-bottom-left-radius 0.7s, border-bottom-right-radius 0.7s;
+  &-yellow{
+    border-inline-start: $intense-golden solid 5px ;
+    background-color:$light-beige ;
 
+  }
 }
+
+
 
 .accordion-header-aria-expanded  {
   border-bottom-left-radius:0 ;
@@ -24,6 +36,10 @@
   border-inline-start: #02618d solid 5px;
   border-bottom-left-radius:8px ;
   border-bottom-right-radius:8px ;
+  &-yellow{
+    border-inline-start: $intense-golden solid 5px ;
+
+  }
 }
 //===================[ accordion item]=================================================
 .accordion-item {border: none;}
@@ -35,15 +51,22 @@
     color: #02618D;
     font-weight: 700;
     font-family: 'Noto Kufi Arabic';
+    &-yellow{
+      color: $intense-golden;
 
+    }
 }
 
-.accordion-subtitle{
+.accordion-status{
     font-size: 12px;
-    color: #02618D;
+    color: $normal-pigment-green;
     font-weight: 700;
     font-family: 'Noto Kufi Arabic';
     margin-inline-end: 10px;
+    &-yellow{
+      color: $light-yellow;
+
+    }
 
 }
 

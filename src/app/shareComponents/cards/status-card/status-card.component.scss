@@ -6,7 +6,11 @@ $golden-poppy-color: #FFEBAF;
 
 $noto-kufi-arabic-font: 'Noto Kufi Arabic', sans-serif;
 
-
+.card{
+  background-color: $golden-poppy-color;
+  border: none;
+  gap: 8px;
+}
 .card-title{
   color: $custom-orange-color;
   font-family: $noto-kufi-arabic-font;
@@ -15,9 +19,11 @@ $noto-kufi-arabic-font: 'Noto Kufi Arabic', sans-serif;
   line-height: 24px;
 
 }
-
-.card{
-  background-color: $golden-poppy-color;
-  border: none;
-  gap: 8px;
+.card-description{
+  color: $custom-orange-color;
+  font-family: $noto-kufi-arabic-font;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0;
+  line-height: 20px;
 }

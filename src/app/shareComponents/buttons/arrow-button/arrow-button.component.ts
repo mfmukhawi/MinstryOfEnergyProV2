@@ -1,10 +1,10 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter, Input } from '@angular/core';
 
 @Component({
   selector: 'app-arrow-button',
   template: `<div
                 class="box-arrow"
-                [ngClass]="{ 'box-arrow-open': isOpen }"
+                [ngClass]="{ 'box-arrow-open': isOpen , 'box-arrow-yellow':changeThemToYellow }"
                 (click)="onButtonClick()"
               ></div>`,
   styleUrl: './arrow-button.component.scss',
@@ -12,6 +12,8 @@ import { Component, Output, EventEmitter } from '@angular/core';
 export class ArrowButtonComponent {
   @Output() buttonClick = new EventEmitter<void>();
   isOpen: boolean = false;
+  @Input() changeThemToYellow: boolean = false;
+
 
   onButtonClick() {
     this.isOpen = !this.isOpen;

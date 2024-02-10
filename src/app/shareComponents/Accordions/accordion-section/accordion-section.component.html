@@ -1,22 +1,23 @@
 <div class="accordion my-3">
   <div class="accordion-item">
-    <h2 class="accordion-header" [id]="accordionId" [ngClass]="{'accordion-header-aria-expanded': isAccordionExpanded}">
+    <h2 class="accordion-header" [ngClass]="{'accordion-header-yellow': changeThemToYellow, 'accordion-header-aria-expanded': isAccordionExpanded}" [id]="accordionId">
       <div class="d-flex justify-content-center align-items-center w-100">
-        <div class="accordion-title">{{ title }}</div>
+        <div class="accordion-title" [ngClass]="{'accordion-title-yellow': changeThemToYellow}">{{ title }}</div>
         <div class="ms-auto d-flex align-items-center">
-          <div *ngIf="subtitle" class="accordion-subtitle">{{ subtitle }}</div>
+          <div *ngIf="status" class="accordion-status" [ngClass]="{'accordion-status-yellow': changeThemToYellow}">{{ status }}</div>
           <app-arrow-button
             (buttonClick)="toggleAccordion()"
             [attr.aria-expanded]="isAccordionExpanded.toString()"
             [attr.aria-controls]="'collapse' + accordionId"
             [attr.data-bs-target]="'#collapse'+accordionId"
             data-bs-toggle="collapse"
+            [changeThemToYellow]="changeThemToYellow"
           ></app-arrow-button>
         </div>
       </div>
     </h2>
     <div [id]="'collapse'+accordionId" class="accordion-collapse collapse" [attr.aria-labelledby]="accordionId" [class.show]="isAccordionExpanded">
-      <div class="accordion-body">
+      <div class="accordion-body" [ngClass]="{'accordion-body-yellow': changeThemToYellow}">
         <ng-content></ng-content>
       </div>
     </div>

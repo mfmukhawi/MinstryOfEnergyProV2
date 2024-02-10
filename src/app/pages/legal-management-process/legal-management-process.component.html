@@ -8,6 +8,32 @@
 
          <div class="row">
           <p class="app-title  ">  تقرير الزيارة الرقابية </p>
+          <app-accordion-section [title]="'معلومات طلب الزيارة الرقابية'"  [accordionId]="'1'">
+
+          </app-accordion-section>
+          <app-accordion-section [title]="' مخالفة تنظيمية'"  [status]="'محالة للقانونية'" [accordionId]="'2'" [changeThemToYellow]="true">
+            <app-status-card [title]="'في انتظار الموافقة'" [description]="'الرقم المميز للمخالفة 000000'"></app-status-card>
+
+
+          </app-accordion-section>
+          <app-accordion-section [title]="' مخالفة تشغيلية '" [status]="'مقبولة'" [accordionId]="'3'">
+
+          </app-accordion-section>
+          <app-accordion-section [title]="' معلومات الاساسيه للزيارة'"  [accordionId]="'4'">
+
+          </app-accordion-section>
+          <app-accordion-section [title]="'القسم ١ '"  [accordionId]="'5'">
+
+          </app-accordion-section>
+          <app-accordion-section [title]="'  القسم ٢'"  [accordionId]="'6'">
+
+          </app-accordion-section>
+          <app-accordion-section [title]="'العينات'" [status]="' 2 عينة'" [accordionId]="'7'" [changeThemToYellow]="true">
+
+          </app-accordion-section>
+          <app-accordion-section [title]="'الملاحظات والمرفقات'"  [accordionId]="'8'">
+
+          </app-accordion-section>
 
          </div>
 
